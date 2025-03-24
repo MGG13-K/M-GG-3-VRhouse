@@ -4,13 +4,30 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>Maggie VR Scene</title>
+  <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script> 
 </head>
 
 <body>
-  Hello world
-  <script src="script.js"></script>
+  <a-scene>
+    <a-sky src="images/panorama-bucharest-from-drone-districts-residential-buildings-fog-other-ground-romania (1).jpg" alt="my background image"></a-sky> 
+    <a-cylinder id="floor" position="0 0 0" radius="7.5" color="black" height="0.1"></a-cylinder>
+  
+    <a-box id="box1" position="0  1.473  4.907" rotation="0  0  0" scale="10  3  0.2" color="white"></a-box>
+    <a-box id="box1" position="0  1.473  -4.907" rotation="0  0  0" scale="10  3  0.2" color="white"></a-box>
+    <a-box id="box1" position="5.049  1.454  -0.008" rotation="0  -90  0" scale="10  3  0.2" color="black"></a-box>
+    <a-box id="box1" position="-5.049  1.454  -0.008" rotation="0  -90  0" scale="10  3  0.2" color="black"></a-box>
+    <a-cylinder id="triangle_front" segments-radial="3" position="0  3.874 4.907" rotation="-90  0  0" scale="5.774  0.2  1.8" color="black"></a-cylinder>
+      <a-cylinder id="triangle_back" segments-radial="3" position="0  3.874 -4.907" rotation="-90  0  0" scale="5.774  0.2  1.8" color="black"></a-cylinder>
+    <a-box id="roof_right" position="2.580  4.328  0" rotation="28.433  90  0" scale="10.931 0.20  6.110"></a-box>
+    <a-box id="roof_left" position="-2.599  4.3321  -0.017" rotation="28.433  -90  0" scale="10.931 0.20  6.130"></a-box>
+    <a-plane id="art1" src="images/sunset-3918693_1280.jpg" scale="2 2 0.05" rotation="0 0 0" position="-0.162 1.934 -4.792"></a-plane>
+    <a-plane id="art1" src="images/lake-1915846_1280.jpg" scale="2 2 0.05" rotation="0 0 0" position="-0.162 1.934 -4.792"></a-plane>
+    <a-plane id="art1" src="images/ai-generated-8944851_1280.png" scale="2 2 0.05" rotation="0 0 0" position="-0.162 1.934 -4.792"></a-plane>
+    <a-obj-model id="tinker.obj" src="images/tinker.obj" mtl="images/obj.mtl" position="0 0 0" rotation="-90 0 0" scale="1 1 1"></a-obj-model>
+    
+  </a-scene>
 </body>
 
 </html>
